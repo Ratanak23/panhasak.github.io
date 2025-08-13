@@ -1,0 +1,78 @@
+<!-- rewards.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Rewards - Getting Started</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="rewards.css">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <section class="rewards-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Getting started is easy</h2>
+            <p class="text-center mb-5">Earn Stars and get rewarded in a few easy steps.</p>
+            
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="step-circle">
+                        <span>1</span>
+                    </div>
+                    <h3>Create an account</h3>
+                    <p>To get started, <a href="#" class="join-now-link">join now</a>. You can also <a href="#" class="join-app-link">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="step-circle">
+                        <span>2</span>
+                    </div>
+                    <h3>Order and pay how you’d like</h3>
+                    <p>Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a href="#" class="learn-more-link">Learn how</a></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="step-circle">
+                        <span>3</span>
+                    </div>
+                    <h3>Earn Stars, get Rewards</h3>
+                    <p>As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Load header and footer -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                
+                // Set active link based on current page
+                const currentPage = window.location.pathname.split('/').pop();
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
