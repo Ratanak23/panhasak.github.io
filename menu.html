@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Starbucks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="menustyles.css">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Menu</h1>
+                <p>Explore our full range of handcrafted beverages, food, and merchandise.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Menu Filters -->
+        <div class="menu-filters">
+            <button class="active" data-category="all">All</button>
+            <button data-category="coffees">Coffees</button>
+            <button data-category="teas">Teas</button>
+            <button data-category="frappuccino">Frappuccino®</button>
+            <button data-category="refreshers">Refreshers®</button>
+            <button data-category="food">Food</button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu-items">
+            <div class="menu-item" data-category="coffees">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Caffè Latte">
+                <div class="menu-item-content">
+                    <h3>Caffè Latte</h3>
+                    <p>Espresso meets steamed milk and a light layer of foam. An accessible, mild coffee drink for any time of day.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="coffees">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211029_CaramelMacchiato.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Caramel Macchiato">
+                <div class="menu-item-content">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Freshly steamed milk with vanilla-flavored syrup is marked with espresso and topped with a caramel drizzle.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="coffees">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_CaffeMocha.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Caffè Mocha">
+                <div class="menu-item-content">
+                    <h3>Caffè Mocha</h3>
+                    <p>Rich, full-bodied espresso meets steamed milk and bittersweet mocha sauce, then is finished with sweetened whipped cream.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="coffees">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/CaffeAmericano.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Caffè Americano">
+                <div class="menu-item-content">
+                    <h3>Caffè Americano</h3>
+                    <p>Espresso shots are topped with hot water to produce a light layer of crema, creating a rich, full-bodied coffee.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="coffees">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_Espresso_Single.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Espresso">
+                <div class="menu-item-content">
+                    <h3>Espresso</h3>
+                    <p>Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="coffees">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/IcedBlondeVanillaLatte.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Iced Coffee">
+                <div class="menu-item-content">
+                    <h3>Iced Coffee</h3>
+                    <p>Cool down with our Iced Coffee, available in a variety of flavors and served with ice.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="teas">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211115_MatchaTeaLatte.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Green Tea">
+                <div class="menu-item-content">
+                    <h3>Matcha Latte</h3>
+                    <p>Our premium Matcha is steeped fresh and served hot.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="teas">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220810_IcedChaiTeaLatte.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Chai Tea Latte">
+                <div class="menu-item-content">
+                    <h3>Chai Tea Latte</h3>
+                    <p>Black tea infused with cinnamon, clove and other warming spices is shaken with milk and built on ice.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="teas">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/IcedBlackTea.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Iced Black Tea">
+                <div class="menu-item-content">
+                    <h3>Iced Black Tea</h3>
+                    <p>Black tea infused with cinnamon, clove and other warming spices is shaken with milk and built on ice.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="teas">
+                <img src="https://www.starbucks.com.hk/media/catalog/product/b/l/black_tea_with_ruby_grapefruit_honey_1.jpg" alt="Black Tea With Ruby Grapefruit & Honey">
+                <div class="menu-item-content">
+                    <h3>Black Tea With Ruby Grapefruit & Honey</h3>
+                    <p>Black tea infused with cinnamon, clove and other warming spices is shaken with milk and built on ice.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="teas">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/HoneyCitrusMintTea.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Honey Citrus Mint Tea">
+                <div class="menu-item-content">
+                    <h3>Honey Citrus Mint Tea</h3>
+                    <p>Black tea infused with cinnamon, clove and other warming spices is shaken with milk and built on ice.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="teas">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/RoyalEnglishBreakfastTea.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Royal English Breakfast Tea">
+                <div class="menu-item-content">
+                    <h3>Royal English Breakfast Tea</h3>
+                    <p>Black tea infused with cinnamon, clove and other warming spices is shaken with milk and built on ice.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="frappuccino">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220323_CaramelFrapp.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Caramel Frappuccino">
+                <div class="menu-item-content">
+                    <h3>Caramel Frappuccino®</h3>
+                    <p>Coffee, milk and ice blended with caramel syrup and topped with whipped cream and a caramel drizzle.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="frappuccino">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/MochaFrappuccino.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Mocha Frappuccino">
+                <div class="menu-item-content">
+                    <h3>Mocha Frappuccino®</h3>
+                    <p>Coffee, milk and ice blended with mocha syrup and topped with whipped cream and a chocolate drizzle.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="frappuccino">
+                <img src="https://www.starbucks.co.uk/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FChocolate-Cream-Frappuccino_2.jpeg&w=3840&q=75" alt="Cream Frappuccino">
+                <div class="menu-item-content">
+                    <h3>Cream Frappuccino®</h3>
+                    <p>Coffee, milk and ice blended with mocha syrup and topped with whipped cream and a chocolate drizzle.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="frappuccino">
+                <img src="https://www.starbucks.co.nz/content/menu/0484497001646127758.jpg?width=296" alt="Green Tea Cream Frappuccino">
+                <div class="menu-item-content">
+                    <h3>Green Tea Cream Frappuccino®</h3>
+                    <p>Coffee, milk and ice blended with mocha syrup and topped with whipped cream and a chocolate drizzle.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="frappuccino">
+                <img src="https://www.starbucks.co.nz/content/menu/0484497001646127758.jpg?width=296" alt="Double Chocolate Chip Frappuccino">
+                <div class="menu-item-content">
+                    <h3>Double Chocolate Chip Frappuccino®</h3>
+                    <p>Coffee, milk and ice blended with mocha syrup and topped with whipped cream and a chocolate drizzle.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="frappuccino">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220323_StrawberryFrapp.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Strawberry Creme Frappuccino">
+                <div class="menu-item-content">
+                    <h3>Strawberry Creme Frappuccino®</h3>
+                    <p>Coffee, milk and ice blended with mocha syrup and topped with whipped cream and a chocolate drizzle.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="refreshers">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/StrawberryAcai.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Strawberry Refresher">
+                <div class="menu-item-content">
+                    <h3>Strawberry Açaí Refresher®</h3>
+                    <p>Our Refresher beverages are fruity and refreshing, made with fruit juice, tea, and natural flavors.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="refreshers">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20221206_MangoDragonfruitRefreshers.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Mango Dragonfruit Refresher">
+                <div class="menu-item-content">
+                    <h3>Mango Dragonfruit Refresher®</h3>
+                    <p>Our Refresher beverages are fruity and refreshing, made with fruit juice, tea, and natural flavors.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+                <div class="menu-item" data-category="refreshers">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/PinkDrink.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Pink Drink Refresher">
+                <div class="menu-item-content">
+                    <h3>Pink Drink Refresher®</h3>
+                    <p>Our Refresher beverages are fruity and refreshing, made with fruit juice, tea, and natural flavors.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+                <div class="menu-item" data-category="refreshers">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SummerBerryRefreshersLemonade.jpg?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Summer-Berry Lemonade Refresher">
+                <div class="menu-item-content">
+                    <h3>Summer-Berry Lemonade Refresher®</h3>
+                    <p>Our Refresher beverages are fruity and refreshing, made with fruit juice, tea, and natural flavors.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="food">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/food/EggPestoMozzarellaSandwich.jpg?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" alt="Food">
+                <div class="menu-item-content">
+                    <h3>Food Selection</h3>
+                    <p>From breakfast sandwiches to pastries and lunch options, we have something for every craving.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+            <div class="menu-item" data-category="food">
+                <img src="https://globalassets.starbucks.com/digitalassets/products/food/SBX20210915_BaconCheddarEggSandwich.jpg?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" alt="Food">
+                <div class="menu-item-content">
+                    <h3>Food Selection</h3>
+                    <p>We have something for every craving.</p>
+                    <a href="#" class="card-link">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Load header and footer -->
+    <script>
+        // Load header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                
+                // Set active link based on current page
+                const currentPage = window.location.pathname.split('/').pop();
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        // Menu filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filters = document.querySelectorAll('.menu-filters button');
+            const items = document.querySelectorAll('.menu-item');
+            
+            // Add click event to each filter button
+            filters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filters.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get the category to filter by
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filter the items
+                    items.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
